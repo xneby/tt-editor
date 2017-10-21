@@ -1,0 +1,28 @@
+{
+	"name": "tt-editor",
+	"version": "0.0.1",
+	"description": "Timetable Editor for ISDR",
+	"license": "CC-BY-NC-ND-4.0",
+	"main": "src/main.js",
+	"author": {
+		"name": "Karol Farbiś",
+		"email": "karol.farbis@gmail.com"
+	},
+	"scripts": {
+		"start": "electron .",
+		"make-css": "node-sass css/main.scss css/main.css",
+		"make-package": "electron-packager ./ --all --out bin/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xneby/tt-editor.git"
+	},
+	"dependencies": {
+		"app-root-path": "2.0.1"
+	},
+	"devDependencies": {
+		"node-sass": "4.5.3",
+		"electron-packager": "9.1.0",
+		"electron": "1.7.9"
+	}
+}
